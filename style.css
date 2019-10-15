@@ -124,7 +124,7 @@ flex-wrap: wrap;
 }
 #banners .bn-left .wrap {
   margin-right: 15px;
-  border: 1px solid gray;
+  border: 2px solid gray;
 }
 #banners .bn-right .wrap {
   margin-left: 15px;
@@ -155,6 +155,7 @@ flex-wrap: wrap;
   display: flex;
   align-items: center;
   margin: 10px 0px;
+  background: fefefd;
   
 }
 #banners .bn-right p {
@@ -202,4 +203,71 @@ border-right: 1px solid gray;
 }
 .news .block-news h4 {
   margin: 0 0 5px 0;
+}
+.news .date-news span {
+  color: #f2ac04;
+  font-weight: bold;
+  width: 100%;
+  font-size: 22px;
+}
+.news .date-news {
+  border-radius: 1px solid grey;
+  padding-right: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+.about {
+  line-height: 24px;
+}
+.more {
+  border: 1px solid black;
+  background: #2b2b29;
+  padding-left: 5px;
+  padding-right: 10px;
+  height: 15px;
+  text-align: end;
+}
+
+.more-more {
+  border: 1px solid black;
+  margin-left: 2px;
+  background: #2b2b29;
+  padding-left: 3px;
+  padding-right: 4px;
+  height: 15px;
+  text-align: end;
+}
+.more [href] {
+  color: #ffffff;
+}
+.more-more [href] {
+  color: #ffffff;
+}
+
+.contacts > div {
+border-bottom: 1px dashed grey;
+padding: 10px 0;
+display: flex;
+justify-content: space-between;
+}
+
+.contacts > div:last-child {
+  border: none;
+}
+.contacts i {
+  font-size: 26px;
+  width: 15%;
+  text-align: center;
+  color: lightgray;
+}
+
+.contacts span {
+  width: 70%;
+  color: gray;
+
+}
+
+.contacts > div:first-of-type span, .contacts > div:first-of-type + div span{
+  font-weight: bold;
+
 }
