@@ -57,7 +57,7 @@ header,
   margin: 0 0 18px 0;
 }
 
-#logo {
+#logo, #logo-footer {
   position: relative;
   width: 245px;
   display: flex;
@@ -68,8 +68,7 @@ header,
   border-right: 1px solid #cac8c5;
 }
 
-#logo::before,
-#logo::after {
+#logo::before, #logo::after, #logo-footer::before, #logo-footer::after  {
   content: "";
   height: 55px;
   width: 55px;
@@ -78,13 +77,13 @@ header,
   top: 0px;
 }
 
-#logo::before {
+#logo::before, #logo-footer::before {
   background: #f8d277;
   position: absolute;
   left: 0;
 }
 
-#logo::after {
+#logo::after, #logo-footer::after {
   background: #f2ac04;
   position: absolute;
   left: 15px;
@@ -264,10 +263,46 @@ justify-content: space-between;
 .contacts span {
   width: 70%;
   color: gray;
-
 }
 
 .contacts > div:first-of-type span, .contacts > div:first-of-type + div span{
   font-weight: bold;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  border-top: 1px solid gray;
+  padding: 25px 0 15px 0;
+  margin-top: 25px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0 5px 0;
+}
+
+footer ul li a {
+  color: gray;
+  padding: 0 10px;
+  display: block;
+  border-right: 1px solid gray;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+footer ul li:last-child a {
+  border: none;
+}
+#logo-footer {
+  height: 60px;
+  border: none;
+  padding: 0;
+  width: 190px;
+}
+
+footer span {
+  color: gray;
 }
